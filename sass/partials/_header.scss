@@ -54,17 +54,29 @@
 	
 	nav {
 		a {
-			
 			span {
 				font-size: 16px;
-				font-weight: normal;
 				font-stretch: normal;
 				font-style: normal;
-				line-height: normal;
+				font-weight: normal;
 				letter-spacing: 1.5px;
+				line-height: normal;
 				&.header__active-menu-item {
+					display: inline-block;
 					font-weight: bold;
 					letter-spacing: 1.4px;
+					position: relative;
+					text-decoration: none;
+
+					&::after {
+						background-color: #fff;
+						content: "";
+						height: 2px;
+						left: 0;
+						position: absolute;
+						top: 30px;
+						width: 15px;
+					}
 				}
 			}
 		}

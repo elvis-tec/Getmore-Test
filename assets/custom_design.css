@@ -47,15 +47,27 @@
 }
 .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 nav a span {
   font-size: 16px;
-  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  font-weight: normal;
   letter-spacing: 1.5px;
+  line-height: normal;
 }
 .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 nav a span.header__active-menu-item {
+  display: inline-block;
   font-weight: bold;
   letter-spacing: 1.4px;
+  position: relative;
+  text-decoration: none;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 nav a span.header__active-menu-item::after {
+  background-color: #fff;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 30px;
+  width: 15px;
 }
 
 @media only screen and (min-width: 750px) {
