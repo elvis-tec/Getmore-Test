@@ -1,0 +1,76 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+* {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header.page-width {
+  margin: 0;
+  width: 100%;
+}
+@media only screen and (min-width: 990px) {
+  .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header.page-width:not(.drawer-menu) {
+    padding: 0;
+  }
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__heading {
+  width: 105px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__heading .header__heading-link {
+  padding: 0;
+}
+@media only screen and (min-width: 990px) {
+  .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__heading .header__heading-link {
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__inline-menu {
+  width: 579px;
+  margin-top: 41px;
+  margin-left: 38px;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__inline-menu .list-menu--inline {
+  width: 561px;
+  justify-content: space-between;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__heading-logo-wrapper {
+  width: 37px;
+  height: 37px;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 nav a span {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 nav a span.header__active-menu-item {
+  font-weight: bold;
+  letter-spacing: 1.4px;
+}
+
+@media only screen and (min-width: 750px) {
+  .banner.banner--large:not(.banner--adapt) {
+    min-height: 78.5rem;
+  }
+}
+.banner .banner__content::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: -14px;
+  height: calc(78.5rem + 52px);
+  width: 2px;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=custom_design.css.map */

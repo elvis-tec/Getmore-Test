@@ -296,6 +296,11 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    {% comment %}
+      Custom styles by Elvis Salazar 20241108
+    {% endcomment %}
+    {{ 'custom_design.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

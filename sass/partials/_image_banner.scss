@@ -1,0 +1,22 @@
+@use "./breakpoints";
+
+@mixin custom_banner {
+	&.banner--large {
+		&:not(.banner--adapt) {
+			@include breakpoints.display_medium {
+				min-height: 78.5rem;
+			}
+		}
+	}
+	.banner__content {
+		&::before {
+			content: '';
+			position: absolute;
+			top: -26px;
+			left: -14px;
+			height: calc(78.5rem + (26px*2));
+			width: 2px;
+			background-color: #fff;
+		}
+	}
+}
