@@ -18,7 +18,7 @@
 
 		.header__heading {
 			width: 105px;
-			margin-top: 0px;
+			margin-top: 8px;
 			display: flex;
 			justify-content: center;
 
@@ -33,7 +33,7 @@
 
 		.header__inline-menu {
 			width: 579px;
-			margin-top: 41px;
+			margin-top: 48px;
 			margin-left: 38px;
 
 			.list-menu--inline {
@@ -49,6 +49,18 @@
 		.header__heading-logo-wrapper {
 			width: 37px;
 			height: 37px;
+		}
+
+		&:not(.header--top-center) {
+			* > .header__search {
+				@include breakpoints.display-large {
+					display: none;
+				}
+			}
+		}
+
+		.header__icon--cart {
+			display: none;
 		}
 	}
 	
@@ -76,6 +88,39 @@
 						position: absolute;
 						top: 30px;
 						width: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	#HeaderLanguageForm {
+		width: 72px;
+		position: absolute;
+    right: 8.5rem;
+    top: 5.5rem;
+
+		ul {
+			display: inline-flex;
+			justify-content: flex-start;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				&:not(:first-of-type) {
+					margin-left: 1.5rem;
+				}
+				a {
+					text-decoration: none;
+					span {
+						font-size: 13px;
+						font-weight: bold;
+						font-stretch: normal;
+						font-style: normal;
+						line-height: normal;
+						letter-spacing: 1.14px;
+						color: #fff;
 					}
 				}
 			}

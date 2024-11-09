@@ -19,7 +19,7 @@
 }
 .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__heading {
   width: 105px;
-  margin-top: 0px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
 }
@@ -34,7 +34,7 @@
 }
 .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__inline-menu {
   width: 579px;
-  margin-top: 41px;
+  margin-top: 48px;
   margin-left: 38px;
 }
 .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__inline-menu .list-menu--inline {
@@ -44,6 +44,14 @@
 .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__heading-logo-wrapper {
   width: 37px;
   height: 37px;
+}
+@media only screen and (min-width: 990px) {
+  .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header:not(.header--top-center) * > .header__search {
+    display: none;
+  }
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 header .header__icon--cart {
+  display: none;
 }
 .color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 nav a span {
   font-size: 16px;
@@ -69,6 +77,34 @@
   top: 30px;
   width: 15px;
 }
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageForm {
+  width: 72px;
+  position: absolute;
+  right: 8.5rem;
+  top: 5.5rem;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageForm ul {
+  display: inline-flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageForm ul li:not(:first-of-type) {
+  margin-left: 1.5rem;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageForm ul li a {
+  text-decoration: none;
+}
+.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageForm ul li a span {
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.14px;
+  color: #fff;
+}
 
 @media only screen and (min-width: 750px) {
   .banner.banner--large:not(.banner--adapt) {
@@ -79,7 +115,7 @@
   content: "";
   position: absolute;
   top: -26px;
-  left: -14px;
+  left: -16px;
   height: calc(78.5rem + 52px);
   width: 2px;
   background-color: #fff;
