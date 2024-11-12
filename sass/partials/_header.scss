@@ -1,4 +1,5 @@
 @use "./breakpoints";
+@use "./variables";
 
 @mixin custom_menu {
 	background: transparent;
@@ -57,6 +58,12 @@
 
 		.header__icon--cart {
 			display: none;
+		}
+
+		#menu-drawer {
+			a {
+				color: variables.$color_dark;
+			}
 		}
 	}
 	
@@ -120,6 +127,10 @@
 					}
 				}
 			}
+		}
+
+		@include breakpoints.display-medium {
+			position: static;
 		}
 	}
 }

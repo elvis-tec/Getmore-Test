@@ -1,4 +1,5 @@
 @use './variables';
+@use './breakpoints';
 
 @mixin custom_footer {
 	background: variables.$color_green;
@@ -65,6 +66,11 @@
 				}
 			}
 			
+		}
+
+		@include breakpoints.display-medium {
+			padding-left: 5rem;
+			padding-right: 5rem;
 		}
 	}
 }

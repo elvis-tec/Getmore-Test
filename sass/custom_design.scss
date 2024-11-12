@@ -4,6 +4,7 @@
 @use './partials/slider';
 @use './partials/rich_text';
 @use './partials/footer';
+@use './partials/breakpoints';
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 * {
@@ -16,6 +17,20 @@
 		background-color: variables.$color_green;
 	}
 }
+
+.shopify-section.shopify-section-group-header-group.section-header.scrolled-past-header.shopify-section-header-sticky.animate.menu-open {
+	sticky-header {
+		background-color: variables.$color_green;
+	}
+}
+
+.shopify-section.shopify-section-group-header-group.section-header.menu-open {
+	sticky-header {
+		background-color: variables.$color_green;
+	}
+}
+
+
 sticky-header {
 	&.header-wrapper--border-bottom {
 		border-bottom: unset;
@@ -41,6 +56,16 @@ sticky-header {
 
 #shopify-section-template--18620903293179__custom_rich_text_ynyT6Q .content-container {
 	background-color: variables.$color_gray;
+
+	.rich-text__blocks {
+		@include breakpoints.display-large {
+			max-width: 110rem;
+		}
+
+		@include breakpoints.display-medium {
+			max-width: 90%;
+		}
+	}
 }
 
 .custom-rich-section-container {
@@ -49,6 +74,10 @@ sticky-header {
 
 .custom_slider {
 	height: 468px;
+
+	@include breakpoints.display-medium {
+		height: auto;
+	}
 	
 	.custom_slider__container {
 		@include slider.custom_slider;

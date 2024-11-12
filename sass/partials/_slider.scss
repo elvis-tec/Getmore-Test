@@ -1,4 +1,5 @@
 @use './variables';
+@use './breakpoints';
 
 @mixin custom_slider {
 	min-height: 468px;
@@ -6,7 +7,6 @@
   flex-wrap: nowrap;
 	position: relative;
 	overflow: hidden;
-	display: flex;
 
 	.slider-and-cards {
 		display: flex;
@@ -95,6 +95,10 @@
 					background-color: variables.$color_green;
 				}
 			}
+
+			@include breakpoints.display-medium {
+				left: 50%;
+			}
 		}
 	
 		.slider-buttons {
@@ -142,6 +146,10 @@
 				border: none;
 				background-color: variables.$color_green;
 			}
+
+			@include breakpoints.display-medium {
+				left: 50%;
+			}
 		}
 	
 		.cards-container {
@@ -178,6 +186,21 @@
 					font-size: 14px;
 				}
 			}
+
+			@include breakpoints.display-medium {
+				flex-direction: column;
+			}
 		}
+
+		@include breakpoints.display-medium {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	@include breakpoints.display-medium {
+		height: auto;
+		width: 100%;
 	}
 };
