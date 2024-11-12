@@ -9,28 +9,21 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "custom_image_banner_DDGYfw": {
+      "type": "custom-image-banner",
       "blocks": {
-        "heading": {
+        "heading_kV3Ma8": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading": "Las mejores raquetas para jugar <span>Tennis</span>",
+            "heading_size": "h1"
           }
         },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
+        "buttons_aiF9Rt": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "ACERCA DE NOSOTROS",
+            "button_link_1": "",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -39,26 +32,155 @@
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "heading_kV3Ma8",
+        "buttons_aiF9Rt"
       ],
       "settings": {
         "image": "shopify://shop_images/group_3x_1a9a02d4-5f7b-408b-a5e3-c3fed846de19.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
+    },
+    "custom_rich_text_ynyT6Q": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "caption_K8WzLq": {
+          "type": "caption",
+          "settings": {
+            "caption": "TENNIS",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_jhwNhi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Raquetas.Accesorios.Pelotas.",
+            "heading_size": "h1"
+          }
+        },
+        "text_nQ6Yzg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Conoce nuestras raquetas y aprende a jugar Tenis como un profesional.</p>"
+          }
+        },
+        "button_LPQdWe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Historia",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_K8WzLq",
+        "heading_jhwNhi",
+        "text_nQ6Yzg",
+        "button_LPQdWe"
+      ],
+      "settings": {
+        "desktop_content_position": "right",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "slider_with_products_iy3KUf": {
+      "type": "slider-with-products",
+      "blocks": {
+        "slide_Fk4tUt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ball-color-court-1405355.png"
+          }
+        },
+        "slide_B3wcV3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/action-athlete-ball-342361_3x_772fdba0-5767-4b59-aa91-9f82e8fa47ab.jpg"
+          }
+        },
+        "slide_Uy7AXj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ball-color-court-1405355.png"
+          }
+        },
+        "slide_TG6nyW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ball-color-court-1405355.png"
+          }
+        },
+        "card_LqebfU": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/group-10_3x_554a5929-13de-4aef-a596-9ae9e5ab75db.png"
+          }
+        },
+        "card_BmP7Ub": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/group-10_3x_554a5929-13de-4aef-a596-9ae9e5ab75db.png"
+          }
+        },
+        "card_RXnf4C": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/group-10_3x_554a5929-13de-4aef-a596-9ae9e5ab75db.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Fk4tUt",
+        "slide_B3wcV3",
+        "slide_Uy7AXj",
+        "slide_TG6nyW",
+        "card_LqebfU",
+        "card_BmP7Ub",
+        "card_RXnf4C"
+      ],
+      "settings": {
+        "slider_title": "Nuestras <span>Raquetas</span>",
+        "slider_description": "Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional."
+      }
+    },
+    "image_banner_TxdzNn": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/action-athlete-ball-342361_3x_772fdba0-5767-4b59-aa91-9f82e8fa47ab.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "image_banner"
+    "custom_image_banner_DDGYfw",
+    "custom_rich_text_ynyT6Q",
+    "slider_with_products_iy3KUf",
+    "image_banner_TxdzNn"
   ]
 }

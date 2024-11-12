@@ -1,5 +1,7 @@
 @use './partials/header';
 @use './partials/image_banner';
+@use './partials/slider';
+@use './partials/rich_text';
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
@@ -14,4 +16,26 @@ $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 
 .banner {
 	@include image_banner.custom_banner;
+}
+
+.footer {
+	&.color-scheme-#{$scheme_id} {
+		background: #cbe346;
+	}
+}
+
+#shopify-section-template--18620903293179__custom_rich_text_ynyT6Q .content-container {
+	background-color: #f3f4f8;
+}
+
+.custom-rich-section-container {
+	@include rich_text.custom_rich_text;
+}
+
+.custom_slider {
+	height: 468px;
+	
+	.custom_slider__container {
+		@include slider.custom_slider;
+	}
 }

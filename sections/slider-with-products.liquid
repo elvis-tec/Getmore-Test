@@ -1,0 +1,165 @@
+<div class="custom_slider__container">
+  <div class="slider-and-cards">
+    <div class="slider-section">
+      <div class="slides">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'slide' %}
+              <div class="slide" {{ block.shopify_attributes }}>
+                {{ block.settings.image | image_url: width: 530 | image_tag }}
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+
+      <!-- Texto de título y descripción -->
+      <div class="slider-text">
+        <h2>{{ section.settings.slider_title }}</h2>
+        <p>{{ section.settings.slider_description }}</p>
+      </div>
+
+      <!-- Dots de navegación -->
+      <div class="dots">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'slide' %}
+              <span class="dot" data-slide="{{ forloop.index0 }}"></span>
+          {% endcase %}
+        {% endfor %}
+      </div>
+
+      <!-- Botones de navegación -->
+      <div class="slider-buttons">
+        <button class="circle-button prev-button"></button>
+        <button class="circle-button next-button"></button>
+      </div>
+    </div>
+
+    <!-- Contenedor de tarjetas -->
+    <div class="cards-container">
+      {% assign card_index = 1 %}
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'card' %}
+            <div class="card">
+              <span class="card-number">{{ card_index }}</span>
+              {{ block.settings.card_image | image_url: width: 150 | image_tag }}
+            </div>
+            {% assign card_index = card_index | plus: 1 %}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelector('.slides');
+    const slideElements = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slideElements.length;
+    let currentSlide = 0;
+
+    function updateSlide() {
+      slideElements.forEach((slide, index) => {
+        // Establecer opacidad de acuerdo con si es el slide activo
+        slide.classList.remove('active');
+        if (index === currentSlide) {
+          slide.classList.add('active');
+        }
+      });
+
+      // Mover los slides horizontalmente
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      // Actualizar los dots
+      dots.forEach((dot) => dot.classList.remove('active'));
+      dots[currentSlide].classList.add('active');
+    }
+
+    document.querySelector('.next-button').addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+    });
+
+    document.querySelector('.prev-button').addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        updateSlide();
+      });
+    });
+
+    updateSlide();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "custom slider",
+  "tag": "section",
+  "class": "custom_slider",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "slider_title",
+      "label": "Slider Title",
+      "default": "Default Slider Title"
+    },
+    {
+      "type": "textarea",
+      "id": "slider_description",
+      "label": "Slider Description",
+      "default": "Default description for the slider."
+    }
+  ],
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide Image"
+        }
+      ]
+    },
+    {
+      "name": "Card Image",
+      "type": "card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider with Cards",
+      "settings": {
+        "slider_title": "Slider by ES",
+        "slider_description": "Description of the slider by ES"
+      },
+      "blocks": [
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "card" },
+        { "type": "card" },
+        { "type": "card" }
+      ]
+    }
+  ]
+}
+{% endschema %}

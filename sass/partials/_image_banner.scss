@@ -1,5 +1,7 @@
 @use "./breakpoints";
 
+$scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
+
 @mixin custom_banner {
 	&.banner--large {
 		&:not(.banner--adapt) {
@@ -17,6 +19,56 @@
 			height: calc(78.5rem + (26px*2));
 			width: 2px;
 			background-color: #fff;
+		}
+	}
+
+	&.custom_banner {
+		.color-scheme-#{$scheme_id} {
+			.banner__heading {
+				font-size: 53px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.28;
+				letter-spacing: -0.05px;
+				color: #fff;
+				//margin-bottom: -50px;
+				margin-left: 1px;
+
+				span {
+					font-weight: bold;
+					color: #cbe346;
+					margin-left: 1px;
+					letter-spacing: 2px;
+				}
+			}
+
+			.banner__buttons {
+				position: relative;
+				top: 13px;
+		
+				a {
+					opacity: 1;
+					padding: 12px 20px 12px 32px;
+					margin-left: 2px;
+					font-size: 13px;
+					font-weight: bold;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: 2.15;
+					letter-spacing: 1.4px;
+
+					&::after{
+						border-radius: 26.5px;
+						border: solid 1px #fff;
+						--border-opacity: unset;
+					}
+
+					span {
+						display: flex;
+					}
+				}
+			}
 		}
 	}
 }
