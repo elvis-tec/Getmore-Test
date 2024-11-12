@@ -91,6 +91,10 @@
           "label": "Vimeo",
           "info": "https://vimeo.com/shopify"
         },
+        "social_linkedin_link": {
+          "label": "LinkedIn",
+          "info": "https://www.linkedin.com/company/shopify"
+        },
         "header": {
           "content": "Cuentas de redes sociales"
         }
