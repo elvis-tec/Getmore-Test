@@ -1,0 +1,68 @@
+@mixin custom_footer {
+	background: #cbe346;
+
+	.footer__content-bottom {
+		display: none;
+	}
+
+	.footer__content-top {
+		padding-top: 64px;
+		padding-left: 0;
+    padding-right: 0;
+
+		.footer-block--menu {
+			ul {
+				display: inline-flex;
+	
+				li {
+					a {
+						font-size: 13px;
+						font-weight: normal;
+						font-stretch: normal;
+						font-style: normal;
+						line-height: normal;
+						letter-spacing: 1.14px;
+						color: #2b3049;
+	
+						&.list-menu__item--active {
+							font-weight: bold;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+
+		.footer-block__image-wrapper {
+			img {
+				width: 55px;
+				height: 55px;
+			}
+		}
+
+		.footer-block--newsletter {
+			justify-content: flex-start;
+			margin-top: 0;
+			
+			ul {
+				gap: 12px;
+				
+				.list-social__item {
+					a {
+						border-radius: 50%;
+						border: 1px solid #fff;
+						width: 31px;
+						height: 31px;
+						padding: 8px;
+	
+						.svg-wrapper {
+							width: 31px;
+							height: 31px;
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}

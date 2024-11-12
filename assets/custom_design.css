@@ -3,6 +3,13 @@
   font-family: "Helvetica Neue", sans-serif;
 }
 
+.shopify-section.shopify-section-group-header-group.section-header.scrolled-past-header.shopify-section-header-hidden.shopify-section-header-sticky {
+  z-index: 11;
+}
+.shopify-section.shopify-section-group-header-group.section-header.scrolled-past-header.shopify-section-header-hidden.shopify-section-header-sticky sticky-header {
+  background-color: #cbe346;
+}
+
 sticky-header.header-wrapper--border-bottom {
   border-bottom: unset;
 }
@@ -165,6 +172,52 @@ sticky-header.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageF
 
 .footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 {
   background: #cbe346;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-bottom {
+  display: none;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top {
+  padding-top: 64px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--menu ul {
+  display: inline-flex;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--menu ul li a {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.14px;
+  color: #2b3049;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--menu ul li a.list-menu__item--active {
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block__image-wrapper img {
+  width: 55px;
+  height: 55px;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--newsletter {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--newsletter ul {
+  gap: 12px;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--newsletter ul .list-social__item a {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 31px;
+  height: 31px;
+  padding: 8px;
+}
+.footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--newsletter ul .list-social__item a .svg-wrapper {
+  width: 31px;
+  height: 31px;
 }
 
 #shopify-section-template--18620903293179__custom_rich_text_ynyT6Q .content-container {

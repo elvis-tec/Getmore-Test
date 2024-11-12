@@ -2,6 +2,7 @@
 @use './partials/image_banner';
 @use './partials/slider';
 @use './partials/rich_text';
+@use './partials/footer';
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
@@ -10,6 +11,12 @@ $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 	font-family: 'Helvetica Neue', sans-serif;
 }
 
+.shopify-section.shopify-section-group-header-group.section-header.scrolled-past-header.shopify-section-header-hidden.shopify-section-header-sticky {
+	z-index: 11;
+	sticky-header {
+		background-color: #cbe346;
+	}
+}
 sticky-header {
 	&.header-wrapper--border-bottom {
 		border-bottom: unset;
@@ -29,7 +36,7 @@ sticky-header {
 
 .footer {
 	&.color-scheme-#{$scheme_id} {
-		background: #cbe346;
+		@include footer.custom_footer;
 	}
 }
 
