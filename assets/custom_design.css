@@ -212,6 +212,7 @@ sticky-header.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageF
 }
 .footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--menu ul {
   display: inline-flex;
+  gap: 15px;
 }
 .footer.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 .footer__content-top .footer-block--menu ul li a {
   font-size: 13px;
