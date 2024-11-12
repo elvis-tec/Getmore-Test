@@ -1,6 +1,5 @@
 @use "./breakpoints";
-
-$scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
+@use './variables';
 
 @mixin custom_banner {
 	&.custom_banner {
@@ -24,7 +23,7 @@ $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 			}
 		}
 
-		.color-scheme-#{$scheme_id} {
+		.color-scheme-#{variables.$scheme_id} {
 			.banner__heading {
 				font-size: 53px;
 				font-weight: normal;
@@ -33,12 +32,11 @@ $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 				line-height: 1.28;
 				letter-spacing: -0.05px;
 				color: #fff;
-				//margin-bottom: -50px;
 				margin-left: 1px;
 
 				span {
 					font-weight: bold;
-					color: #cbe346;
+					color: variables.$color_green;
 					margin-left: 1px;
 					letter-spacing: 2px;
 				}

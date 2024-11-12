@@ -1,3 +1,5 @@
+@use './variables';
+
 @mixin custom_slider {
 	min-height: 468px;
 	display: inline-flex;
@@ -22,7 +24,6 @@
 			width: 100%;
 			max-width: 530px;
 			height: auto;
-			// display: inline-flex;
 	
 			.slide {
 				min-width: 100%;
@@ -42,7 +43,7 @@
 			left: 56.5%;
 			transform: translateX(-50%);
 			text-align: center;
-			color: white;
+			color: #fff;
 			z-index: 10;
 	
 			h2 {
@@ -91,7 +92,7 @@
 				cursor: pointer;
 	
 				&.active {
-					background-color: #cbe346;
+					background-color: variables.$color_green;
 				}
 			}
 		}
@@ -139,7 +140,7 @@
 	
 			.next-button {
 				border: none;
-				background-color: #cbe346;
+				background-color: variables.$color_green;
 			}
 		}
 	
@@ -166,8 +167,8 @@
 					position: absolute;
 					top: 8px;
 					left: 8px;
-					background-color: #cbe346;
-					color: white;
+					background-color: variables.$color_green;
+					color: #fff;
 					width: 39px;
 					height: 39px;
 					border-radius: 50%;

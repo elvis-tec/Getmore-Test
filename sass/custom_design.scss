@@ -1,11 +1,10 @@
+@use './partials/variables';
 @use './partials/header';
 @use './partials/image_banner';
 @use './partials/slider';
 @use './partials/rich_text';
 @use './partials/footer';
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-
-$scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 
 * {
 	font-family: 'Helvetica Neue', sans-serif;
@@ -14,7 +13,7 @@ $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 .shopify-section.shopify-section-group-header-group.section-header.scrolled-past-header.shopify-section-header-hidden.shopify-section-header-sticky {
 	z-index: 11;
 	sticky-header {
-		background-color: #cbe346;
+		background-color: variables.$color_green;
 	}
 }
 sticky-header {
@@ -22,7 +21,7 @@ sticky-header {
 		border-bottom: unset;
 	}
 
-	&.color-scheme-#{$scheme_id}{
+	&.color-scheme-#{variables.$scheme_id}{
 		@include header.custom_menu;
 	}
 }
@@ -35,13 +34,13 @@ sticky-header {
 }
 
 .footer {
-	&.color-scheme-#{$scheme_id} {
+	&.color-scheme-#{variables.$scheme_id} {
 		@include footer.custom_footer;
 	}
 }
 
 #shopify-section-template--18620903293179__custom_rich_text_ynyT6Q .content-container {
-	background-color: #f3f4f8;
+	background-color: variables.$color_gray;
 }
 
 .custom-rich-section-container {

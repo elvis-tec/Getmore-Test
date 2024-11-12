@@ -1,21 +1,22 @@
+@use './variables';
+
 @mixin custom_rich_text {
 	display: flex;
 	flex-direction: row;
-	// min-width: 65em;
 
 	h1 {
 		font-size: 40px;
 	}
 
 	.rich-text__caption {
-		color: #cbe346;
+		color: variables.$color_green;
 		font-size: 16px;
 		margin-top: 2.8em;
 	}
 
 	a {
 		background-color: #ffffff;
-		color: #000;
+		color: variables.$color_dark;
 		height: 20px;
 		width: 220px;
 

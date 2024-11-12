@@ -238,7 +238,7 @@ sticky-header.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageF
 }
 .custom-rich-section-container a {
   background-color: #ffffff;
-  color: #000;
+  color: #1e2335;
   height: 20px;
   width: 220px;
 }
@@ -302,7 +302,7 @@ sticky-header.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageF
   left: 56.5%;
   transform: translateX(-50%);
   text-align: center;
-  color: white;
+  color: #fff;
   z-index: 10;
 }
 .custom_slider .custom_slider__container .slider-and-cards .slider-text h2 {
@@ -414,7 +414,7 @@ sticky-header.color-scheme-9cdce5d4-224f-46b6-9b44-ae10ba81c856 #HeaderLanguageF
   top: 8px;
   left: 8px;
   background-color: #cbe346;
-  color: white;
+  color: #fff;
   width: 39px;
   height: 39px;
   border-radius: 50%;

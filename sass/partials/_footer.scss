@@ -1,5 +1,7 @@
+@use './variables';
+
 @mixin custom_footer {
-	background: #cbe346;
+	background: variables.$color_green;
 
 	.footer__content-bottom {
 		display: none;
@@ -22,7 +24,7 @@
 						font-style: normal;
 						line-height: normal;
 						letter-spacing: 1.14px;
-						color: #2b3049;
+						color: variables.$color_black;
 	
 						&.list-menu__item--active {
 							font-weight: bold;
