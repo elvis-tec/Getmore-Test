@@ -13,6 +13,7 @@
 		.slider-section {
 			position: relative;
 			flex: 1;
+			margin-left: 1px;
 		}
 	
 		.slides {
@@ -35,60 +36,80 @@
 		}
 	
 		.slider-text {
+			width: 400px;
 			position: absolute;
-			top: 20px;
-			left: 50%;
+			top: 10px;
+			left: 56.5%;
 			transform: translateX(-50%);
 			text-align: center;
 			color: white;
 			z-index: 10;
 	
 			h2 {
-				font-size: 24px;
-				margin: 0;
+				font-size: 50px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.28;
+				letter-spacing: -0.06px;
+				color: #fff;
+				margin-bottom: 0;
+
+				span {
+					font-weight: bold;
+					margin-left: 29px;
+				}
 			}
 	
 			p {
-				font-size: 16px;
-				margin: 5px 0 0;
+				font-size: 18px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.67;
+				letter-spacing: 0.51px;
+				color: #fff;
+				margin-top: 10px;
+				margin-left: 100px;
+				text-align: left;
 			}
 		}
 	
 		.dots {
 			position: absolute;
-			bottom: 50px;
-			left: 50%;
+			bottom: 16.1rem;
+			left: 46%;
 			transform: translateX(-50%);
 			display: flex;
-			gap: 5px;
+			gap: 2rem;
 	
 			.dot {
-				height: 12px;
-				width: 12px;
-				background-color: rgba(255, 255, 255, 0.5);
+				height: 7.8px;
+				width: 8px;
+				background-color: #ebebeb;
 				border-radius: 50%;
 				cursor: pointer;
 	
 				&.active {
-					background-color: rgba(255, 255, 255, 0.9);
+					background-color: #cbe346;
 				}
 			}
 		}
 	
 		.slider-buttons {
 			position: absolute;
-			bottom: 10px;
-			left: 50%;
+			bottom: 70px;
+			left: 25.1rem;
 			transform: translateX(-50%);
 			display: flex;
 			gap: 15px;
 	
 			.circle-button {
-				width: 30px;
-				height: 30px;
+				width: 54px;
+				height: 54px;
 				border-radius: 50%;
-				background-color: rgba(0, 0, 0, 0.5);
-				border: none;
+				background-color: transparent;
+				border: 1px solid #fff;
 				cursor: pointer;
 				display: flex;
 				align-items: center;
@@ -117,7 +138,8 @@
 			}
 	
 			.next-button {
-				background-color: rgba(255, 0, 0, 0.7);
+				border: none;
+				background-color: #cbe346;
 			}
 		}
 	
@@ -126,16 +148,16 @@
 			overflow: hidden;
 			display: flex;
 			flex-direction: row;
-			gap: 10px;
-			padding-left: 15px;
+			gap: 36px;
+			padding-left: 52px;
 			align-items: center;
-			justify-content: center;
+			justify-content: flex-start;
 	
 			.card {
 				position: relative;
 	
 				img {
-					width: 100%;
+					width: 288px;
 					height: auto;
 					object-fit: cover;
 				}
@@ -144,10 +166,10 @@
 					position: absolute;
 					top: 8px;
 					left: 8px;
-					background-color: rgba(0, 0, 0, 0.7);
+					background-color: #cbe346;
 					color: white;
-					width: 24px;
-					height: 24px;
+					width: 39px;
+					height: 39px;
 					border-radius: 50%;
 					display: flex;
 					align-items: center;

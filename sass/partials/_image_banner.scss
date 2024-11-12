@@ -3,26 +3,27 @@
 $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 
 @mixin custom_banner {
-	&.banner--large {
-		&:not(.banner--adapt) {
-			@include breakpoints.display_medium {
-				min-height: 78.5rem;
+	&.custom_banner {
+		&.banner--large {
+			&:not(.banner--adapt) {
+				@include breakpoints.display_medium {
+					min-height: 78.5rem;
+				}
 			}
 		}
-	}
-	.banner__content {
-		&::before {
-			content: '';
-			position: absolute;
-			top: -26px;
-			left: -16px;
-			height: calc(78.5rem + (26px*2));
-			width: 2px;
-			background-color: #fff;
+		
+		.banner__content {
+			&::before {
+				content: '';
+				position: absolute;
+				top: -26px;
+				left: -16px;
+				height: calc(78.5rem + (26px*2));
+				width: 2px;
+				background-color: #fff;
+			}
 		}
-	}
 
-	&.custom_banner {
 		.color-scheme-#{$scheme_id} {
 			.banner__heading {
 				font-size: 53px;

@@ -10,12 +10,21 @@ $scheme_id : '9cdce5d4-224f-46b6-9b44-ae10ba81c856';
 	font-family: 'Helvetica Neue', sans-serif;
 }
 
-.color-scheme-#{$scheme_id}{
-	@include header.custom_menu;
+sticky-header {
+	&.header-wrapper--border-bottom {
+		border-bottom: unset;
+	}
+
+	&.color-scheme-#{$scheme_id}{
+		@include header.custom_menu;
+	}
 }
 
+
 .banner {
-	@include image_banner.custom_banner;
+	&:first-of-type {
+		@include image_banner.custom_banner;
+	}
 }
 
 .footer {
