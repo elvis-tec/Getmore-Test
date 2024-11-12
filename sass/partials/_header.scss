@@ -11,7 +11,7 @@
 			margin: 0;
 			width: 100%;
 			&:not(.drawer-menu) {
-				@include breakpoints.display_large {
+				@include breakpoints.display-large {
 					padding: 0;
 				}
 			}
@@ -25,7 +25,7 @@
 
 			.header__heading-link {
 				padding: 0;
-				@include breakpoints.display_large {
+				@include breakpoints.display-large {
 					margin-left: 3px;
 					margin-top: 3px;
 				}
@@ -61,6 +61,10 @@
 		}
 
 		#menu-drawer {
+			.menu-drawer__utility-links {
+				bottom: 7vh;
+			}
+
 			a {
 				color: variables.$color_dark;
 			}
@@ -129,8 +133,16 @@
 			}
 		}
 
+		@include breakpoints.display-tablet {
+			position: static;
+		}
+
 		@include breakpoints.display-medium {
 			position: static;
+		}
+
+		@include breakpoints.display-large {
+			position: absolute;
 		}
 	}
 }

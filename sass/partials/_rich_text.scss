@@ -1,8 +1,14 @@
 @use './variables';
+@use './breakpoints';
+
 
 @mixin custom_rich_text {
 	display: flex;
 	flex-direction: row;
+
+	@include breakpoints.display-tablet {
+		flex-direction: column;
+	}
 
 	.rich-text__caption {
 		color: variables.$color_green;
@@ -13,6 +19,11 @@
 	.custom-rich-main-container {
 		margin: 0 3em;
 		width: 100%;
+
+		@include breakpoints.display-tablet {
+			margin: 0;
+		}
+	
 
 		h1 {
 			font-size: 50px;

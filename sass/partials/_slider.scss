@@ -96,8 +96,16 @@
 				}
 			}
 
+			@include breakpoints.display-tablet {
+				left: 50%;
+			}
+
 			@include breakpoints.display-medium {
 				left: 50%;
+			}
+
+			@include breakpoints.display-large {
+				left: 46%;
 			}
 		}
 	
@@ -146,9 +154,16 @@
 				border: none;
 				background-color: variables.$color_green;
 			}
+			@include breakpoints.display-tablet {
+				left: 50%;
+			}
 
 			@include breakpoints.display-medium {
 				left: 50%;
+			}
+
+			@include breakpoints.display-large {
+				left: 46%;
 			}
 		}
 	
@@ -186,10 +201,28 @@
 					font-size: 14px;
 				}
 			}
+			@include breakpoints.display-tablet {
+				flex-direction: column;
+				padding-left: 0;
+			}
 
 			@include breakpoints.display-medium {
+				padding-left: 0;
 				flex-direction: column;
 			}
+
+			@include breakpoints.display-large {
+				padding-left: 52px;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+			
+		}
+
+		@include breakpoints.display-tablet {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 		@include breakpoints.display-medium {
@@ -197,10 +230,26 @@
 			justify-content: center;
 			align-items: center;
 		}
+
+		@include breakpoints.display-large {
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		
+	}
+
+	@include breakpoints.display-tablet {
+		height: auto;
+		width: 100%;
 	}
 
 	@include breakpoints.display-medium {
 		height: auto;
+		width: 100%;
+	}
+
+	@include breakpoints.display-large {
 		width: 100%;
 	}
 };

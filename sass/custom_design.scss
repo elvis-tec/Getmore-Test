@@ -75,8 +75,16 @@ sticky-header {
 .custom_slider {
 	height: 468px;
 
+	@include breakpoints.display-tablet {
+		height: auto;
+	}
+
 	@include breakpoints.display-medium {
 		height: auto;
+	}
+
+	@include breakpoints.display-large {
+		height: 468px;
 	}
 	
 	.custom_slider__container {

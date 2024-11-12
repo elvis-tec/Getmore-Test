@@ -72,5 +72,10 @@
 			padding-left: 5rem;
 			padding-right: 5rem;
 		}
+
+		@include breakpoints.display-tablet {
+			padding-left: 5rem;
+			padding-right: 5rem;
+		}
 	}
 }
